@@ -1,0 +1,15 @@
+.link {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  text-decoration: none;
+  color: white;
+}
+
+.isActive {
+  background-color: #1e88e5;
+}
+
+.container {
+  margin: 48px auto;
+}
