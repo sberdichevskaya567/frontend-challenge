@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createHashRouter } from 'react-router-dom';
 import { EMainPath } from '../../shared/enum/router';
 import MainPage from '../../pages/main';
 import FavoritePage from '../../pages/favorite';
@@ -9,7 +9,7 @@ const ROUTER_MAP = {
   [EMainPath.FAVORITE]: FavoritePage,
 };
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     element: <Layout />,
     children: [

@@ -8,7 +8,7 @@ const FavoriteList = () => {
     <>
       {favoriteCard ? (
         <div className="grid">
-          {favoriteCard?.map((item) => {
+          {favoriteCard?.toReversed().map((item) => {
             return (
               <div className={`card ${removingCard === item.id ? 'removing' : ''}`} key={item.id}>
                 <img src={item.url} />
